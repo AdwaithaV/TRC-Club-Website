@@ -1,1 +1,1 @@
-# TRC-Club-Website
+# The Robotics Club Website
