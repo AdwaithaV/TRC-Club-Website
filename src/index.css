@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('./assets/fonts/Rubik.ttf');
+}
+
+@font-face {
+    font-family: RobotoMono;
+    src: url('./assets/fonts/RobotoMono.ttf');
+}
+
+@theme {
+    --font-heading: 'Rubik', sans-serif;
+    --font-mono: 'RobotoMono', monospace;
+}
