@@ -22,8 +22,8 @@ const Header = () => {
                     <motion.div
                         className="flex items-center space-x-2"
                     >
-                        <img src={LogoDark} alt="Logo" className="h-12 w-auto" />
-                        <span className="text-2xl font-heading text-black">TRC</span>
+                        <img src={LogoLight} alt="Logo" className="h-12 w-auto" />
+                        <span className="text-2xl font-heading text-white">TRC</span>
                     </motion.div>
 
                     <div className="hidden md:flex space-x-8">
@@ -31,7 +31,7 @@ const Header = () => {
                             <motion.a
                                 key={item.name}
                                 href={item.href}
-                                className="text-gray-700 hover:text-gray-900 transition-colors font-mono"
+                                className="text-gray-300 hover:text-gray-100 transition-colors font-mono"
                             >
                                 {item.name}
                             </motion.a>
@@ -39,7 +39,7 @@ const Header = () => {
                     </div>
 
                     <button
-                        className="md:hidden text-gray-900"
+                        className="md:hidden text-gray-300"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -57,7 +57,7 @@ const Header = () => {
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="block py-2 text-gray-700 hover:text-gray-900 transition-colors"
+                                className="block py-2 text-gray-300 hover:text-gray-100 font-mono transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.name}
